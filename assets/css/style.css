@@ -10,10 +10,6 @@ html {
     font-family: 'Great Vibes', cursive;
 }
 
-.font-title {
-    font-family: 'Cormorant Garamond', serif;
-}
-
 body {
     font-family: 'Work Sans', sans-serif;
     background: #000;
@@ -37,15 +33,54 @@ body {
     pointer-events: none;
 }
 
-.hero-section{
-    position:relative;
-    background:black;
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    background: #000;
 }
 
-.hero-section img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.hero-section img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/* =========================
+   HERO FLOATING CARD
+========================= */
+
+.hero-floating-card {
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+
+    bottom: -110px;
+
+    height: 180px;
+
+    z-index: 20;
+
+    background: rgba(0, 0, 0, .92);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 40px;
+
+    border: 1px solid rgba(255,255,255,.05);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.35);
 }
 
 /* =========================
@@ -64,14 +99,14 @@ body {
     inset: 0;
 
     background-image:
-    linear-gradient(
-        to bottom,
-        rgba(0,0,0,.15) 0%,
-        rgba(0,0,0,.25) 40%,
-        rgba(0,0,0,.65) 70%,
-        rgba(0,0,0,.95) 100%
-    ),
-    url('../images/bg-cover.jpg');
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.15) 0%,
+            rgba(0,0,0,.25) 40%,
+            rgba(0,0,0,.65) 70%,
+            rgba(0,0,0,.95) 100%
+        ),
+        url('../images/bg-cover.jpg');
 
     background-size: cover;
     background-position: center;
@@ -89,38 +124,39 @@ body {
     background:
         radial-gradient(
             circle at center,
-            rgba(255,255,255,0.03),
+            rgba(255,255,255,.03),
             transparent 70%
         );
 
     z-index: -1;
 }
 
-.hero-overlay {
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.15) 0%,
-            rgba(0,0,0,0.45) 60%,
-            rgba(0,0,0,0.95) 100%
-        );
-}
 /* =========================
-   PREMIUM GLASS CARD
+   SECTION PERTAMA
+========================= */
+
+.section-bg-first {
+    margin-top: -110px;
+    position: relative;
+    z-index: 30;
+}
+
+/* =========================
+   PREMIUM CARD
 ========================= */
 
 .save-date-card {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0,0,0,.92);
 
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,.05);
 
-    border-radius: 32px;
+    border-radius: 40px;
 
     box-shadow:
-        0 15px 40px rgba(0,0,0,0.35);
+        0 15px 40px rgba(0,0,0,.35);
 
     color: white;
 }
@@ -130,19 +166,19 @@ body {
 ========================= */
 
 .countdown-box {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,.08);
 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,.08);
 
     transition: .3s;
 }
 
 .countdown-box:hover {
     transform: translateY(-3px);
-    background: rgba(255,255,255,0.12);
+    background: rgba(255,255,255,.12);
 }
 
 /* =========================
@@ -150,17 +186,16 @@ body {
 ========================= */
 
 .gallery-image {
-    transition: all .5s ease;
     cursor: pointer;
+
+    transition: all .5s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.4);
 }
 
 .gallery-image:hover {
     transform: scale(1.05);
-}
-
-.gallery-image {
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.4);
 }
 
 /* =========================
@@ -181,11 +216,11 @@ body {
    FOTO MEMPELAI
 ========================= */
 
-img {
+.section-bg img {
     transition: .5s;
 }
 
-img:hover {
+.section-bg img:hover {
     transform: scale(1.02);
 }
 
