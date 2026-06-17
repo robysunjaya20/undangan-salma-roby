@@ -81,41 +81,57 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // LIGHTBOX
+// LIGHTBOX GALERI
 
-    const galleryImages =
-        document.querySelectorAll(".gallery-image");
+const galleryImages =
+    document.querySelectorAll(".gallery-image");
 
-    const lightbox =
-        document.getElementById("lightbox");
+const lightbox =
+    document.getElementById("lightbox");
 
-    const lightboxImage =
-        document.getElementById("lightbox-image");
+const lightboxImage =
+    document.getElementById("lightbox-image");
 
-    const closeLightbox =
-        document.getElementById("close-lightbox");
+const closeLightbox =
+    document.getElementById("close-lightbox");
 
-    galleryImages.forEach(img => {
+galleryImages.forEach(img => {
 
-        img.addEventListener("click", () => {
+    img.addEventListener("click", () => {
 
-            lightboxImage.src = img.src;
+        if (!lightbox || !lightboxImage) return;
 
-            lightbox.classList.remove("hidden");
+        lightboxImage.src = img.src;
 
-            lightbox.classList.add("flex");
+        lightbox.classList.remove("hidden");
 
-        });
+        lightbox.classList.add("flex");
 
     });
 
-    closeLightbox?.addEventListener("click", () => {
+});
+
+// Tutup dengan tombol X
+closeLightbox?.addEventListener("click", () => {
+
+    lightbox.classList.add("hidden");
+
+    lightbox.classList.remove("flex");
+
+});
+
+// Tutup saat klik area gelap di luar gambar
+lightbox?.addEventListener("click", (e) => {
+
+    if (e.target === lightbox) {
 
         lightbox.classList.add("hidden");
 
         lightbox.classList.remove("flex");
 
-    });
+    }
+
+});
 
 
     // UCAPAN

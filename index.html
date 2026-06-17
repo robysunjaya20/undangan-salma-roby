@@ -28,12 +28,10 @@
             <p class="uppercase tracking-widest text-xs mb-3 text-amber-300">The Wedding of</p>
             <h1 class="font-serif text-5xl mb-6">Salma & Roby</h1>
             
-            <div class="mb-8 p-5 bg-black/30 backdrop-blur-md rounded-xl border border-white/10 shadow-xl">
-                <p class="text-xs text-stone-300 mb-2">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
-                <h2 id="nama-tamu" class="text-2xl font-semibold text-amber-200">Tamu Undangan</h2>
-            </div>
+            <p class="text-xs text-stone-300 mb-2">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+            <h2 id="nama-tamu" class="text-2xl font-semibold text-amber-200">Tamu Undangan</h2>
 
-            <button id="btn-buka" class="bg-amber-700 hover:bg-amber-800 text-white font-medium py-3.5 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer">
+            <button id="btn-buka" class="bg-amber-700 hover:bg-amber-800 text-white font-medium py-2 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer">
                 <i class="fas fa-envelope-open-text mr-2"></i> Buka Undangan
             </button>
         </div>
@@ -45,7 +43,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
     <!-- HERO -->
     <section class="section-bg min-h-screen flex flex-col justify-center items-center text-center px-6">
 
-        <div class="max-w-sm">
+        <div class="max-w-sm" data-aos="fade-up">
 
             <h2 class="uppercase tracking-[5px] text-sm mb-4">
                 Wedding Ceremony Of
@@ -131,7 +129,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
         </h4>
 
         <p class="text-2xl mb-2">
-            Putri Pertama
+            Putri kelima
         </p>
 
         <p class="text-xl text-stone-200">
@@ -273,7 +271,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
             </div>
 
             <!-- RESEPSI -->
-            <div class="save-date-card p-8 text-center">
+            <div class="save-date-card p-8 text-center" data-aos="fade-up" data-aos-delay="150">
 
                 <i class="fas fa-champagne-glasses text-amber-300 text-3xl mb-6"></i>
 
@@ -311,7 +309,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
         <div class="text-center mt-12">
 
-            <a href="https://maps.google.com"
+            <a href="https://goo.gl/maps/pXE2F3vHFMufgb638"
               target="_blank"
               class="inline-block border border-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
 
@@ -333,7 +331,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
         <div class="max-w-md mx-auto relative border-l border-white/30 pl-8 space-y-14">
 
-            <div>
+            <div data-aos="fade-right">
 
                 <div class="absolute -left-2 w-4 h-4 bg-amber-400 rounded-full"></div>
 
@@ -354,7 +352,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
             </div>
 
-            <div>
+            <div data-aos="fade-left">
 
                 <div class="absolute -left-2 w-4 h-4 bg-amber-400 rounded-full"></div>
 
@@ -389,28 +387,40 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
         </h2>
 
         <div class="grid grid-cols-2 gap-4 max-w-md mx-auto">
-
+                
             <img src="assets/images/gallery/foto1.jpg"
+                data-aos="zoom-in"
+                data-aos-delay="100"
                 class="gallery-image rounded-2xl shadow-xl cursor-pointer"
                 loading="lazy">
 
             <img src="assets/images/gallery/foto2.jpg"
+                data-aos="zoom-in"
+                data-aos-delay="200"
                 class="gallery-image rounded-2xl shadow-xl cursor-pointer"
                 loading="lazy">
 
             <img src="assets/images/gallery/foto3.jpg"
+                data-aos="zoom-in"
+                data-aos-delay="300"
                 class="gallery-image rounded-2xl shadow-xl cursor-pointer"
                 loading="lazy">
 
             <img src="assets/images/gallery/foto4.jpg"
+                data-aos="zoom-in"
+                data-aos-delay="400"
                 class="gallery-image rounded-2xl shadow-xl cursor-pointer"
                 loading="lazy">
 
             <img src="assets/images/gallery/foto5.jpg"
+                data-aos="zoom-in"
+                data-aos-delay="500"
                 class="gallery-image rounded-2xl shadow-xl cursor-pointer"
                 loading="lazy">
 
             <img src="assets/images/gallery/foto6.jpg"
+                data-aos="zoom-in"
+                data-aos-delay="600"
                 class="gallery-image rounded-2xl shadow-xl cursor-pointer"
                 loading="lazy">
 
@@ -433,18 +443,18 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
         </p>
 
-        <div class="save-date-card max-w-md mx-auto p-8 text-center">
+        <div class="save-date-card max-w-md mx-auto p-8 text-center" data-aos="zoom-in">
 
             <i class="fas fa-wallet text-amber-300 text-4xl mb-6"></i>
 
             <p class="uppercase tracking-[4px] text-sm text-stone-300 mb-2">
-                Bank BCA
+                Bank BRI
             </p>
 
-            <p id="norek-bca"
+            <p id="norek-bri"
               class="text-3xl font-semibold tracking-[4px] mb-3">
 
-                1234567890
+                606501031770535
 
             </p>
 
@@ -452,7 +462,32 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
                 a.n Salma Salsabilla
             </p>
 
-            <button onclick="salinTeks('norek-bca')"
+            <button onclick="salinTeks('norek-bri')"
+                class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+
+                <i class="fas fa-copy mr-2"></i>
+                Salin Nomor Rekening
+
+            </button>
+
+            <i class="fas fa-wallet text-amber-300 text-4xl mb-6"></i>
+
+            <p class="uppercase tracking-[4px] text-sm text-stone-300 mb-2">
+                Bank Mandiri
+            </p>
+
+            <p id="norek-mandiri"
+                class="text-3xl font-semibold tracking-[4px] mb-3">
+
+                1560019654278
+
+            </p>
+
+            <p class="text-stone-300 mb-8">
+                a.n Roby Sunjaya
+            </p>
+
+            <button onclick="salinTeks('norek-mandiri')"
                 class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
 
                 <i class="fas fa-copy mr-2"></i>
@@ -476,7 +511,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
         </p>
 
-        <form id="form-rsvp"
+        <form id="form-rsvp" data-aos="fade-up"
             class="save-date-card max-w-md mx-auto p-8 space-y-6">
 
             <div>
@@ -596,7 +631,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
     </section>
     <!-- FOOTER -->
-    <footer class="section-bg py-20 px-6 text-center">
+    <footer class="section-bg py-20 px-6 text-center" data-aos="fade-up">
 
         <h2 class="font-serif text-6xl mb-6">
             Salma & Roby
@@ -612,14 +647,28 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
         <p class="text-stone-400 text-sm">
 
-            © 2026 Digital Invitation
+            © 2026 Roby & Salma Invitation
 
         </p>
 
     </footer>
 
-</main>
+    </main>
+    <!-- LIGHTBOX -->
+    <div id="lightbox"
+        class="fixed inset-0 bg-black/90 z-[999] hidden items-center justify-center p-6">
 
+        <button id="close-lightbox"
+                class="absolute top-6 right-6 text-white text-4xl">
+
+            ×
+
+        </button>
+
+        <img id="lightbox-image"
+            class="max-w-full max-h-full rounded-xl">
+
+    </div>
 
     <script>
         function salinTeks(idElemen) {
@@ -639,27 +688,12 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100
-    });
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            offset: 80
+        });
     </script>
-
-    <!-- LIGHTBOX -->
-    <div id="lightbox"
-        class="fixed inset-0 bg-black/90 z-[999] hidden items-center justify-center p-6">
-
-        <button id="close-lightbox"
-                class="absolute top-6 right-6 text-white text-4xl">
-
-            ×
-
-        </button>
-
-        <img id="lightbox-image"
-            class="max-w-full max-h-full rounded-xl">
-
-    </div>
 </body>
 </html>
