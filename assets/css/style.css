@@ -1,25 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
-/* Mengatur font khusus font-serif */
+
+/* =========================
+   FONT
+========================= */
+
 .font-serif {
     font-family: 'Great Vibes', cursive;
-}
-
-body {
-    font-family: 'Work Sans', sans-serif;
-}
-
-/* Kunci Scroll di Awal */
-.overflow-hidden {
-    overflow: hidden;
-}
-
-/* Transisi Geser Cover Ke atas */
-.cover-slide-up {
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
 }
 
 .font-title {
@@ -28,23 +16,54 @@ body {
 
 body {
     font-family: 'Work Sans', sans-serif;
+    background: #000;
 }
+
+/* =========================
+   SCROLL LOCK
+========================= */
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* =========================
+   COVER ANIMATION
+========================= */
+
+.cover-slide-up {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* =========================
+   SECTION BACKGROUND
+========================= */
 
 .section-bg {
     position: relative;
     overflow: hidden;
+    color: white;
 }
 
 .section-bg::before {
     content: "";
     position: absolute;
     inset: 0;
+
     background-image:
-        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.78)),
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
         url('../images/bg-cover.jpg');
+
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+
     z-index: -2;
 }
 
@@ -52,31 +71,155 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,.25);
-    backdrop-filter: blur(2px);
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.03),
+            transparent 70%
+        );
+
     z-index: -1;
 }
 
+/* =========================
+   PREMIUM GLASS CARD
+========================= */
+
 .save-date-card {
-    background: rgba(0,0,0,.9);
-    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.35);
+
+    color: white;
 }
+
+/* =========================
+   COUNTDOWN
+========================= */
 
 .countdown-box {
-    background: rgba(255,255,255,.15);
-    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: .3s;
 }
 
-/* Animasi Putar Icon Musik Slow */
-@keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+.countdown-box:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.12);
 }
+
+/* =========================
+   GALERI
+========================= */
+
+.gallery-image {
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.gallery-image {
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.4);
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+#lightbox {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+#lightbox-image {
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.6);
+}
+
+/* =========================
+   FOTO MEMPELAI
+========================= */
+
+img {
+    transition: .5s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+#btn-playback {
+    background: rgba(0,0,0,.55);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    color: white;
+}
+
+/* =========================
+   SPIN ANIMATION
+========================= */
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .animate-spin-slow {
     animation: spin-slow 8s linear infinite;
 }
 
-/* Modifikasi animasi bawaan saat dipause */
 .animation-paused {
     animation-play-state: paused;
+}
+
+/* =========================
+   SCROLLBAR PREMIUM
+========================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.25);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,.4);
 }
