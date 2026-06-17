@@ -37,13 +37,23 @@
         </div>
     </section>
 
-    <main id="main-content"
-class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-hidden">
+    <main id="main-content" class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-hidden">
 
     <!-- HERO -->
-    <section class="section-bg min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <section class="hero-section h-screen relative overflow-hidden">
 
-        <div class="max-w-sm" data-aos="fade-up">
+        <!-- FOTO DEPAN -->
+        <img src="assets/images/gallery/foto3.jpg"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-gradient-to-b
+                    from-black/10
+                    via-black/20
+                    to-black"></div>
+
+        <!-- TEKS -->
+        <div class="absolute bottom-24 left-0 right-0 text-center text-white z-10">
 
             <h2 class="uppercase tracking-[5px] text-sm mb-4">
                 Wedding Ceremony Of
@@ -51,15 +61,15 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
             <div class="border-t border-white w-48 mx-auto mb-6"></div>
 
-            <h1 class="font-serif text-6xl mb-4">
+            <h1 class="font-serif text-5xl mb-4">
                 Salma & Roby
             </h1>
 
-            <p class="tracking-[8px] text-lg mb-10">
+            <p class="tracking-[6px] text-base mb-8">
                 12 • 12 • 2026
             </p>
 
-            <p class="text-sm leading-8 text-stone-200">
+            <p class="text-sm leading-7 text-stone-200 max-w-xs mx-auto">
                 We begin a new chapter made for the two of us
                 and kindly ask for your best wishes.
             </p>
@@ -67,7 +77,6 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
         </div>
 
     </section>
-
 
     <!-- AYAT -->
     <section class="section-bg py-24 px-6">
@@ -78,7 +87,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
                 We Found Love
             </h2>
 
-            <p class="italic leading-10 text-stone-200 text-lg">
+            <p class="italic leading-8 text-stone-200 text-base">
 
                 "Dan di antara tanda-tanda (kebesaran)-Nya ialah
                 Dia menciptakan pasangan-pasangan untukmu
@@ -87,7 +96,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
             </p>
 
-            <h3 class="mt-10 text-3xl font-semibold">
+            <h3 class="mt-8 text-lg font-semibold">
                 Q.S - AR RUM : 21
             </h3>
 
@@ -459,8 +468,9 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
 
                 <i class="fas fa-copy mr-2"></i>
                 Salin Nomor Rekening
-
             </button>
+            <br>
+            <br>
 
             <i class="fas fa-wallet text-amber-300 text-4xl mb-6"></i>
 
@@ -625,7 +635,7 @@ class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-h
     <!-- FOOTER -->
     <footer class="section-bg py-20 px-6 text-center" data-aos="fade-up">
 
-        <h2 class="font-serif text-6xl mb-6">
+        <h2 class="font-serif text-5xl mb-6">
             Salma & Roby
         </h2>
 
