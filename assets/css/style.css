@@ -1,0 +1,82 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Mengatur font khusus font-serif */
+.font-serif {
+    font-family: 'Great Vibes', cursive;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Kunci Scroll di Awal */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Transisi Geser Cover Ke atas */
+.cover-slide-up {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.font-title {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.section-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.78)),
+        url('../images/bg-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+.section-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.25);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.save-date-card {
+    background: rgba(0,0,0,.9);
+    border-radius: 40px;
+}
+
+.countdown-box {
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+}
+
+/* Animasi Putar Icon Musik Slow */
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+/* Modifikasi animasi bawaan saat dipause */
+.animation-paused {
+    animation-play-state: paused;
+}

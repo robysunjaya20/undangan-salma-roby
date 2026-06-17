@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Salma & Roby</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-stone-900 font-sans text-stone-800 overflow-hidden" id="body-lock">
+
+    <audio id="wedding-music" src="assets/music/background-music.mp3" loop></audio>
+
+    <button id="btn-playback" class="fixed bottom-5 right-5 z-40 bg-white/90 backdrop-blur-sm text-amber-700 p-4 rounded-full shadow-2xl hidden border border-amber-200 cursor-pointer animate-spin-slow">
+        <i id="audio-icon" class="fas fa-music"></i>
+    </button>
+
+    <section id="cover" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-cover bg-center text-white transition-all duration-1000" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/bg-cover.jpg');">
+        <div class="text-center p-8 max-w-sm mx-4" data-aos="fade-up">
+            <p class="uppercase tracking-widest text-xs mb-3 text-amber-300">The Wedding of</p>
+            <h1 class="font-serif text-5xl mb-6">Salma & Roby</h1>
+            
+            <div class="mb-8 p-5 bg-black/30 backdrop-blur-md rounded-xl border border-white/10 shadow-xl">
+                <p class="text-xs text-stone-300 mb-2">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+                <h2 id="nama-tamu" class="text-2xl font-semibold text-amber-200">Tamu Undangan</h2>
+            </div>
+
+            <button id="btn-buka" class="bg-amber-700 hover:bg-amber-800 text-white font-medium py-3.5 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer">
+                <i class="fas fa-envelope-open-text mr-2"></i> Buka Undangan
+            </button>
+        </div>
+    </section>
+
+    <main id="main-content"
+class="hidden opacity-0 transition-opacity duration-1000 text-white overflow-x-hidden">
+
+    <!-- HERO -->
+    <section class="section-bg min-h-screen flex flex-col justify-center items-center text-center px-6">
+
+        <div class="max-w-sm">
+
+            <h2 class="uppercase tracking-[5px] text-sm mb-4">
+                Wedding Ceremony Of
+            </h2>
+
+            <div class="border-t border-white w-48 mx-auto mb-6"></div>
+
+            <h1 class="font-serif text-6xl mb-4">
+                Salma & Roby
+            </h1>
+
+            <p class="tracking-[8px] text-lg mb-10">
+                12 • 12 • 2026
+            </p>
+
+            <p class="text-sm leading-8 text-stone-200">
+                We begin a new chapter made for the two of us
+                and kindly ask for your best wishes.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- AYAT -->
+    <section class="section-bg py-24 px-6">
+
+        <div class="save-date-card max-w-md mx-auto p-10 text-center" data-aos="zoom-in">
+
+            <h2 class="font-serif text-5xl mb-8">
+                We Found Love
+            </h2>
+
+            <p class="italic leading-10 text-stone-200 text-lg">
+
+                "Dan di antara tanda-tanda (kebesaran)-Nya ialah
+                Dia menciptakan pasangan-pasangan untukmu
+                dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya,
+                dan Dia menjadikan di antaramu rasa kasih dan sayang."
+
+            </p>
+
+            <h3 class="mt-10 text-3xl font-semibold">
+                Q.S - AR RUM : 21
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEMPELAI -->
+    <section class="section-bg py-24 px-6 text-center">
+
+        <h2 class="font-serif text-6xl mb-6">
+            We Are<br>Getting Married
+        </h2>
+
+        <p class="italic text-xl mb-8">
+            Bismillahirrahmanirrahim
+        </p>
+
+        <p class="max-w-md mx-auto leading-9 text-stone-200 mb-16">
+
+            Maha Suci Allah yang telah menciptakan makhluk-Nya
+            berpasang-pasangan. Dengan rahmat dan ridho-Nya,
+            kami bermaksud mengadakan pernikahan.
+
+        </p>
+
+
+        <!-- WANITA -->
+        <img src="assets/images/cewek.jpg" data-aos="fade-right"
+        class="w-full max-w-sm mx-auto mb-10 shadow-2xl">
+
+        <h3 class="font-serif text-6xl mb-4">
+            Salma
+        </h3>
+
+        <h4 class="font-serif text-4xl mb-4">
+            Salma Salsabilla
+        </h4>
+
+        <p class="text-2xl mb-2">
+            Putri Pertama
+        </p>
+
+        <p class="text-xl text-stone-200">
+            Bapak Mashuri & Ibu Rikhyati
+        </p>
+
+
+        <div class="text-7xl my-16 font-serif">
+            &
+        </div>
+
+
+        <!-- PRIA -->
+        <img src="assets/images/cowok.jpg" data-aos="fade-left"
+        class="w-full max-w-sm mx-auto mb-10 shadow-2xl">
+
+        <h3 class="font-serif text-6xl mb-4">
+            Roby
+        </h3>
+
+        <h4 class="font-serif text-4xl mb-4">
+            Roby Sunjaya
+        </h4>
+
+        <p class="text-2xl mb-2">
+            Putra Pertama
+        </p>
+
+        <p class="text-xl text-stone-200">
+            Bapak Dodi Dores & Ibu Sainah
+        </p>
+
+    </section>
+
+
+    <!-- SAVE THE DATE -->
+    <section class="section-bg py-20 px-6">
+
+        <div class="save-date-card max-w-md mx-auto p-10" data-aos="fade-up">
+
+            <h2 class="font-serif text-6xl text-center mb-12">
+                Save The Date
+            </h2>
+
+
+            <div class="grid grid-cols-4 gap-4 text-center">
+
+                <div class="countdown-box rounded-2xl py-6">
+
+                    <span id="days"
+                    class="block text-3xl font-bold">
+                        00
+                    </span>
+
+                    Hari
+
+                </div>
+
+                <div class="countdown-box rounded-2xl py-6">
+
+                    <span id="hours"
+                    class="block text-3xl font-bold">
+                        00
+                    </span>
+
+                    Jam
+
+                </div>
+
+                <div class="countdown-box rounded-2xl py-6">
+
+                    <span id="mins"
+                    class="block text-3xl font-bold">
+                        00
+                    </span>
+
+                    Menit
+
+                </div>
+
+                <div class="countdown-box rounded-2xl py-6">
+
+                    <span id="secs"
+                    class="block text-3xl font-bold">
+                        00
+                    </span>
+
+                    Detik
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ACARA -->
+    <section class="section-bg py-24 px-6">
+
+        <h2 class="font-serif text-5xl text-center mb-16">
+            Wedding Event
+        </h2>
+
+        <div class="max-w-md mx-auto space-y-8">
+
+            <!-- AKAD -->
+            <div class="save-date-card p-8 text-center" data-aos="fade-up">
+
+                <i class="fas fa-heart text-amber-300 text-3xl mb-6"></i>
+
+                <h3 class="font-serif text-4xl mb-6">
+                    Akad Nikah
+                </h3>
+
+                <p class="text-lg mb-2">
+                    Sabtu
+                </p>
+
+                <p class="text-3xl font-semibold mb-6">
+                    12 Desember 2026
+                </p>
+
+                <p class="text-xl mb-8">
+                    09.00 WIB - Selesai
+                </p>
+
+                <div class="border-t border-white/20 my-6"></div>
+
+                <h4 class="text-xl font-semibold mb-2">
+                    Masjid Agung Al-Azhar
+                </h4>
+
+                <p class="text-stone-300">
+                    Jl. Sisingamangaraja,
+                    Kebayoran Baru,
+                    Jakarta Selatan
+                </p>
+
+            </div>
+
+            <!-- RESEPSI -->
+            <div class="save-date-card p-8 text-center">
+
+                <i class="fas fa-champagne-glasses text-amber-300 text-3xl mb-6"></i>
+
+                <h3 class="font-serif text-4xl mb-6">
+                    Resepsi
+                </h3>
+
+                <p class="text-lg mb-2">
+                    Sabtu
+                </p>
+
+                <p class="text-3xl font-semibold mb-6">
+                    12 Desember 2026
+                </p>
+
+                <p class="text-xl mb-8">
+                    11.00 WIB – 14.00 WIB
+                </p>
+
+                <div class="border-t border-white/20 my-6"></div>
+
+                <h4 class="text-xl font-semibold mb-2">
+                    Auditorium Ar-Rahman
+                </h4>
+
+                <p class="text-stone-300">
+                    Jl. Sisingamangaraja,
+                    Kebayoran Baru,
+                    Jakarta Selatan
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+
+            <a href="https://maps.google.com"
+              target="_blank"
+              class="inline-block border border-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
+
+                <i class="fas fa-location-dot mr-2"></i>
+                Lihat Lokasi
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- LOVE STORY -->
+    <section class="section-bg py-24 px-6">
+
+        <h2 class="font-serif text-5xl text-center mb-16" data-aos="fade-right">
+            Our Love Story
+        </h2>
+
+        <div class="max-w-md mx-auto relative border-l border-white/30 pl-8 space-y-14">
+
+            <div>
+
+                <div class="absolute -left-2 w-4 h-4 bg-amber-400 rounded-full"></div>
+
+                <p class="text-amber-300 text-lg mb-2">
+                    2023
+                </p>
+
+                <h3 class="text-2xl font-semibold mb-3">
+                    Pertama Bertemu
+                </h3>
+
+                <p class="text-stone-300 leading-8">
+
+                    Kami dipertemukan dalam sebuah proyek kerja kelompok.
+                    Berawal dari diskusi sederhana hingga tumbuh rasa nyaman.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <div class="absolute -left-2 w-4 h-4 bg-amber-400 rounded-full"></div>
+
+                <p class="text-amber-300 text-lg mb-2">
+                    2025
+                </p>
+
+                <h3 class="text-2xl font-semibold mb-3">
+                    Menjalin Komitmen
+                </h3>
+
+                <p class="text-stone-300 leading-8">
+
+                    Setelah melalui berbagai perjalanan bersama,
+                    kami memutuskan untuk melangkah menuju ikatan suci pernikahan.
+
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section-bg py-24 px-6">
+
+        <h2 class="font-serif text-5xl text-center mb-16"
+            data-aos="fade-up">
+
+            Gallery
+
+        </h2>
+
+        <div class="grid grid-cols-2 gap-4 max-w-md mx-auto">
+
+            <img src="assets/images/gallery/foto1.jpg"
+                class="gallery-image rounded-2xl shadow-xl cursor-pointer"
+                loading="lazy">
+
+            <img src="assets/images/gallery/foto2.jpg"
+                class="gallery-image rounded-2xl shadow-xl cursor-pointer"
+                loading="lazy">
+
+            <img src="assets/images/gallery/foto3.jpg"
+                class="gallery-image rounded-2xl shadow-xl cursor-pointer"
+                loading="lazy">
+
+            <img src="assets/images/gallery/foto4.jpg"
+                class="gallery-image rounded-2xl shadow-xl cursor-pointer"
+                loading="lazy">
+
+            <img src="assets/images/gallery/foto5.jpg"
+                class="gallery-image rounded-2xl shadow-xl cursor-pointer"
+                loading="lazy">
+
+            <img src="assets/images/gallery/foto6.jpg"
+                class="gallery-image rounded-2xl shadow-xl cursor-pointer"
+                loading="lazy">
+
+        </div>
+
+    </section>
+
+    <!-- KADO DIGITAL -->
+    <section class="section-bg py-24 px-6">
+
+        <h2 class="font-serif text-5xl text-center mb-6">
+            Wedding Gift
+        </h2>
+
+        <p class="text-center text-stone-300 max-w-md mx-auto leading-8 mb-12">
+
+            Doa restu Anda merupakan karunia terindah bagi kami.
+            Namun apabila ingin memberikan tanda kasih,
+            dapat melalui rekening berikut.
+
+        </p>
+
+        <div class="save-date-card max-w-md mx-auto p-8 text-center">
+
+            <i class="fas fa-wallet text-amber-300 text-4xl mb-6"></i>
+
+            <p class="uppercase tracking-[4px] text-sm text-stone-300 mb-2">
+                Bank BCA
+            </p>
+
+            <p id="norek-bca"
+              class="text-3xl font-semibold tracking-[4px] mb-3">
+
+                1234567890
+
+            </p>
+
+            <p class="text-stone-300 mb-8">
+                a.n Salma Salsabilla
+            </p>
+
+            <button onclick="salinTeks('norek-bca')"
+                class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+
+                <i class="fas fa-copy mr-2"></i>
+                Salin Nomor Rekening
+
+            </button>
+
+        </div>
+    </section>
+    
+    <!-- RSVP -->
+    <section class="section-bg py-24 px-6">
+
+        <h2 class="font-serif text-5xl text-center mb-6">
+            RSVP
+        </h2>
+
+        <p class="text-center text-stone-300 mb-12">
+
+            Mohon konfirmasi kehadiran Anda.
+
+        </p>
+
+        <form id="form-rsvp"
+            class="save-date-card max-w-md mx-auto p-8 space-y-6">
+
+            <div>
+
+                <label class="block mb-2">
+                    Nama Lengkap
+                </label>
+
+                <input type="text"
+                    id="rsvp-nama"
+                    required
+                    class="w-full p-4 rounded-xl bg-white/10 border border-white/20">
+
+            </div>
+
+            <div>
+
+                <label class="block mb-2">
+                    Jumlah Tamu
+                </label>
+
+                <select id="rsvp-jumlah"
+                    class="w-full p-4 rounded-xl bg-white/10 border border-white/20">
+
+                    <option value="1">1 Orang</option>
+                    <option value="2">2 Orang</option>
+                    <option value="3">3 Orang</option>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <label class="block mb-4">
+                    Konfirmasi Kehadiran
+                </label>
+
+                <div class="space-y-3">
+
+                    <label class="flex items-center gap-3">
+
+                        <input type="radio"
+                            name="kehadiran"
+                            value="Hadir"
+                            checked>
+
+                        Hadir
+
+                    </label>
+
+                    <label class="flex items-center gap-3">
+
+                        <input type="radio"
+                            name="kehadiran"
+                            value="Tidak Hadir">
+
+                        Tidak Hadir
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <button type="submit"
+                class="w-full bg-amber-700 hover:bg-amber-800 py-4 rounded-full transition">
+
+                <i class="fab fa-whatsapp mr-2"></i>
+
+                Kirim Konfirmasi
+
+            </button>
+        </form>
+    </section>
+
+    <section class="section-bg py-24 px-6">
+
+        <h2 class="font-serif text-5xl text-center mb-6">
+            Ucapan & Doa
+        </h2>
+
+        <p class="text-center text-stone-300 mb-12">
+
+            Berikan doa terbaik Anda.
+
+        </p>
+
+        <form id="wish-form"
+              class="save-date-card max-w-md mx-auto p-8 space-y-6">
+
+            <input type="text"
+                  id="wish-name"
+                  placeholder="Nama Anda"
+                  required
+                  class="w-full p-4 rounded-xl bg-white/10 border border-white/20">
+
+            <textarea id="wish-message"
+                      rows="4"
+                      placeholder="Tuliskan doa..."
+                      required
+                      class="w-full p-4 rounded-xl bg-white/10 border border-white/20"></textarea>
+
+            <button type="submit"
+                    class="w-full bg-amber-700 hover:bg-amber-800 py-4 rounded-full">
+
+                Kirim Ucapan
+
+            </button>
+
+        </form>
+
+        <div id="wish-list"
+            class="max-w-md mx-auto mt-10 space-y-4">
+
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+    <footer class="section-bg py-20 px-6 text-center">
+
+        <h2 class="font-serif text-6xl mb-6">
+            Salma & Roby
+        </h2>
+
+        <p class="text-stone-300 mb-10">
+
+            Merupakan suatu kehormatan dan kebahagiaan
+            bagi kami apabila Bapak/Ibu/Saudara/i
+            berkenan hadir untuk memberikan doa restu.
+
+        </p>
+
+        <p class="text-stone-400 text-sm">
+
+            © 2026 Digital Invitation
+
+        </p>
+
+    </footer>
+
+</main>
+
+
+    <script>
+        function salinTeks(idElemen) {
+            const teks = document.getElementById(idElemen).innerText;
+            navigator.clipboard.writeText(teks).then(() => {
+                alert("Nomor rekening berhasil disalin!");
+            }).catch(err => {
+                console.error("Gagal menyalin teks: ", err);
+            });
+        }
+    </script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/rsvp.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+    </script>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox"
+        class="fixed inset-0 bg-black/90 z-[999] hidden items-center justify-center p-6">
+
+        <button id="close-lightbox"
+                class="absolute top-6 right-6 text-white text-4xl">
+
+            ×
+
+        </button>
+
+        <img id="lightbox-image"
+            class="max-w-full max-h-full rounded-xl">
+
+    </div>
+</body>
+</html>
